@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Performance Predictor</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    header {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      line-height: 1.5;
+      max-width: 600px;
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 15px;
+    }
+
+    .btn {
+      background-color: #fff;
+      color: #4facfe;
+      border: none;
+      border-radius: 30px;
+      padding: 15px 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+    }
+
+    .btn:hover {
+      background-color: #4facfe;
+      color: #fff;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      transform: scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>Welcome to the Student Performance Predictor!</header>
+  <p>
+    Our application empowers educators, parents, and students to predict academic performance based on key metrics. 
+    Start your journey to insights and better outcomes today!
+  </p>
+  <div class="btn-container">
+    <button class="btn" onclick="navigateTo('predict')">Get Started</button>
+    <button class="btn" onclick="navigateTo('learn-more')">Learn More</button>
+  </div>
+  <footer>&copy Satindra.k 2024 Student Success Inc. All Rights Reserved.</footer>
+
+  <script>
+    // Navigation functionality for buttons
+    function navigateTo(page) {
+      if (page === 'predict') {
+        window.location.href = '/predict'; // Update with actual route
+      } else if (page === 'learn-more') {
+        window.location.href = '/learn-more'; // Update with actual route
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
